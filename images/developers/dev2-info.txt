@@ -1,0 +1,4 @@
+Imagen del Desarrollador 2: David Esteban
+Usar una foto profesional de 300x300px
+Formato: JPG o PNG
+Nombre del archivo: dev2.jpg
