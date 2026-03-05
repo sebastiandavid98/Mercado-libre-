@@ -1,0 +1,4 @@
+Imagen del Desarrollador 3: Jhon Molina
+Usar una foto profesional de 300x300px
+Formato: JPG o PNG
+Nombre del archivo: dev3.jpg
