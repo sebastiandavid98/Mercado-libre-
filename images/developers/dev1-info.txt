@@ -1,0 +1,4 @@
+Imagen del Desarrollador 1: Juan Pérez
+Usar una foto profesional de 300x300px
+Formato: JPG o PNG
+Nombre del archivo: dev1.jpg
