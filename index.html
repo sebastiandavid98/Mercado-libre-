@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MercadoLibre - Clon</title>
+    <title>Mercado Libre Colombia - Envíos Gratis en el día</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/products.css">
@@ -13,153 +13,335 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <h2>MercadoLibre</h2>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <svg width="134" height="34" viewBox="0 0 134 34">
+                        <text x="0" y="24" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2D3277">mercado</text>
+                        <text x="70" y="24" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2D3277">libre</text>
+                    </svg>
+                </div>
+                <div class="nav-location">
+                    <span class="location-icon">📍</span>
+                    <div class="location-text">
+                        <span class="location-label">Ingresa tu</span>
+                        <span class="location-value">ubicación</span>
+                    </div>
+                </div>
             </div>
+            
             <div class="nav-search">
                 <input type="text" id="searchInput" placeholder="Buscar productos, marcas y más...">
-                <button id="searchBtn">🔍</button>
+                <button id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z" fill="#666"/>
+                    </svg>
+                </button>
             </div>
-            <div class="nav-links">
-                <a href="#productos">Productos</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#desarrolladores">Desarrolladores</a>
+
+            <div class="nav-promo">
+                <span class="promo-badge">ENVÍO GRATIS</span>
+                <span class="promo-text">EN TU PRIMERA COMPRA</span>
             </div>
         </div>
-            <div class="developers-grid">
-                <!-- Sebastian David -->
-                <div class="developer-card">
-                    <img src="https://github.com/sebastiandavid98.png" alt="Sebastian David" class="developer-avatar">
-                    <h3 class="developer-name">Sebastian David</h3>
-                    <p class="developer-description">Desarrollador web con interés en front-end y experiencia en proyectos personales relacionados con marketplaces.</p>
 
-                    <div class="developer-services">
-                        <h4>Servicios Ofrecidos</h4>
-                        <div class="services-list">
-                            <span class="service-tag">Desarrollo de interfaces responsivas</span>
-                            <span class="service-tag">Integración de APIs</span>
-                            <span class="service-tag">Optimización de rendimiento web</span>
-                        </div>
-                    </div>
-
-                    <div class="developer-technologies">
-                        <h4>Tecnologías que Manejo</h4>
-                        <div class="tech-list">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-
-                    <p><a href="/portafolio-index.html" class="github-link" target="_blank">Ver Portafolio (portafolio-index.html)</a></p>
-                    <a href="https://github.com/sebastiandavid98" class="github-link" target="_blank">GitHub</a>
+        <!-- Segunda línea del navbar -->
+        <div class="nav-secondary">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="#categorias">Categorías</a>
+                    <a href="#ofertas">Ofertas</a>
+                    <a href="#cupones">Cupones</a>
+                    <a href="#supermercado">Supermercado</a>
+                    <a href="#moda">Moda</a>
+                    <a href="#vender">Vender</a>
+                    <a href="#ayuda">Ayuda / PQR</a>
                 </div>
-
-                <!-- David Salas -->
-                <div class="developer-card">
-                    <img src="https://github.com/DavidSalas0273.png" alt="David Salas" class="developer-avatar">
-                    <h3 class="developer-name">David Salas (DavidSalas0273)</h3>
-                    <p class="developer-description">Desarrollador full-stack con enfoque en JavaScript y construcción de experiencias web accesibles y de alto rendimiento.</p>
-
-                    <div class="developer-services">
-                        <h4>Servicios Ofrecidos</h4>
-                        <div class="services-list">
-                            <span class="service-tag">Desarrollo front-end</span>
-                            <span class="service-tag">Integración de APIs</span>
-                            <span class="service-tag">Optimización y accesibilidad</span>
-                        </div>
-                    </div>
-
-                    <div class="developer-technologies">
-                        <h4>Tecnologías que Manejo</h4>
-                        <div class="tech-list">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                    </div>
-
-                    <p><a href="/portafolio-davidsalas0273.html" class="github-link" target="_blank">Ver Portafolio de DavidSalas0273</a></p>
-                    <a href="https://github.com/DavidSalas0273" class="github-link" target="_blank">GitHub</a>
+                <div class="nav-user">
+                    <a href="#cuenta">Crea tu cuenta</a>
+                    <a href="#ingresa">Ingresa</a>
+                    <a href="#compras">Mis compras</a>
+                    <a href="#carrito" class="nav-cart">🛒</a>
                 </div>
             </div>
-                    <div class="developer-info">
-                        <h3>Desarrollador 3</h3>
-                        <p class="role">Frontend Developer</p>
-                        <p class="description">Master en UI/UX y React</p>
-                        <a href="portafolios-desarrolladores/desarrollador-3/index.html" class="btn-portfolio">Ver Portafolio</a>
+        </div>
+    </nav>
+
+    <!-- Banner Principal con Carrusel -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="slide-content">
+                    <div class="slide-left">
+                        <h2>CUPONES EXCLUSIVOS</h2>
+                        <h3>SOLO POR 24 HORAS</h3>
+                        <p>SOLO PARA SUSCRIPTORES</p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="promo-card">
+                            <h3>PARA TI QUE YA ERES meli+</h3>
+                            <div class="discount">15%DCTO</div>
+                            <p class="promo-code">CÓDIGO: MELIMASDAY</p>
+                            <button class="btn-subscribe">SUSCRÍBETE DESDE $9.900</button>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Desarrollador 4 - Jhon Alejandro -->
-                <div class="developer-card">
-                    <div class="developer-image">
-                        <img src="https://via.placeholder.com/250x250?text=Jhon+Alejandro" alt="Jhon Alejandro Jojoa Molina">
+    <!-- Tarjetas de Beneficios -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-scroll">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📦</div>
+                    <h4>Envío gratis</h4>
+                    <p>Beneficio por ser tu primera compra.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏱️</div>
+                    <h4>Visto recientemente</h4>
+                    <div class="product-mini">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_924830-MLA71783581502_092023-F.webp" alt="Producto">
+                        <p class="product-price">$ 28.648</p>
                     </div>
-                    <div class="developer-info">
-                        <h3>Jhon Alejandro Jojoa Molina</h3>
-                        <p class="role">Full Stack Developer | Web & Mobile</p>
-                        <p class="description">Especialista en JavaScript, React y desarrollo móvil</p>
-                        <a href="portafolios-desarrolladores/desarrollador-4/index.html" class="btn-portfolio">Ver Portafolio</a>
-                    </div>
-=======
-                <!-- Sebastian David -->
-                <div class="developer-card">
-                    <img src="https://github.com/sebastiandavid98.png" alt="Sebastian David" class="developer-avatar">
-                    <h3 class="developer-name">Sebastian David</h3>
-                    <p class="developer-description">Desarrollador web con interés en front-end y experiencia en proyectos personales relacionados con marketplaces.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📍</div>
+                    <h4>Ingresa tu ubicación</h4>
+                    <p>Consulta costos y tiempos de entrega.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👤</div>
+                    <h4>Ingresa a tu cuenta</h4>
+                    <p>Disfruta de ofertas y compra sin límites.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💳</div>
+                    <h4>Medios de pago</h4>
+                    <p>Paga tus compras de forma rápida y segura.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Menos de $40.000</h4>
+                    <p>Descubre productos con precios bajos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Productos Destacados -->
+    <section id="productos" class="featured-products">
+        <div class="container">
+            <h2>Ofertas</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_967278-MLU72528417779_102023-F.webp" alt="iPhone 15 Pro" onerror="this.src='https://via.placeholder.com/200x200'">
+                    <h3>iPhone 15 Pro Max</h3>
+                    <p class="old-price">$5.999.999</p>
+                    <p class="price">$4.799.999</p>
+                    <p class="discount">20% OFF</p>
+                    <p class="shipping">Envío gratis</p>
+                    <button class="btn-primary">Ver más</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_785426-MLA71783088008_092023-F.webp" alt="Laptop HP" onerror="this.src='https://via.placeholder.com/200x200'">
+                    <h3>Laptop HP 15.6" Intel Core i5</h3>
+                    <p class="old-price">$2.499.999</p>
+                    <p class="price">$1.899.999</p>
+                    <p class="discount">24% OFF</p>
+                    <p class="shipping">Envío gratis</p>
+                    <button class="btn-primary">Ver más</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_924830-MLA71783581502_092023-F.webp" alt="AirPods Pro" onerror="this.src='https://via.placeholder.com/200x200'">
+                    <h3>AirPods Pro 2da Generación</h3>
+                    <p class="old-price">$1.199.999</p>
+                    <p class="price">$899.999</p>
+                    <p class="discount">25% OFF</p>
+                    <p class="shipping">Envío gratis</p>
+                    <button class="btn-primary">Ver más</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_647916-MLU72832491820_112023-F.webp" alt="Samsung Galaxy S24" onerror="this.src='https://via.placeholder.com/200x200'">
+                    <h3>Samsung Galaxy S24 Ultra</h3>
+                    <p class="old-price">$5.499.999</p>
+                    <p class="price">$4.299.999</p>
+                    <p class="discount">22% OFF</p>
+                    <p class="shipping">Envío gratis</p>
+                    <button class="btn-primary">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Envío Gratis</h3>
+                    <p>En compras superiores a $50.000</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pago Seguro</h3>
+                    <p>Múltiples métodos de pago</p>
+                </div>
+                <div class="service-card">
+                    <h3>Garantía</h3>
+                    <p>Protección en todas tus compras</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio de Desarrolladores -->
+    <section id="desarrolladores" class="developers-portfolio">
+        <div class="container">
+            <h2>Nuestro Equipo de Desarrollo</h2>
+            <div class="developers-grid">
+                <!-- Portafolio Sebastián -->
+                <div class="developer-card">
+                    <img src="images/developers/sebastian.jpg" alt="Sebastián" class="developer-avatar" onerror="this.src='https://via.placeholder.com/120x120/667eea/ffffff?text=SD'">
+                    <h3 class="developer-name">Sebastián David</h3>
+                    <p class="developer-description">
+                        Desarrollador Full Stack con experiencia en aplicaciones web modernas. 
+                        Apasionado por crear soluciones escalables y código limpio.
+                    </p>
+                    
                     <div class="developer-services">
                         <h4>Servicios Ofrecidos</h4>
                         <div class="services-list">
-                            <span class="service-tag">Desarrollo de interfaces responsivas</span>
-                            <span class="service-tag">Integración de APIs</span>
-                            <span class="service-tag">Optimización de rendimiento web</span>
+                            <span class="service-tag">Desarrollo Full Stack</span>
+                            <span class="service-tag">API REST</span>
+                            <span class="service-tag">Consultoría Tech</span>
                         </div>
                     </div>
-
+                    
                     <div class="developer-technologies">
                         <h4>Tecnologías que Manejo</h4>
                         <div class="tech-list">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
                             <span class="tech-tag">JavaScript</span>
-                        </div>
-                    </div>
-
-                    <p><a href="/portafolio-index.html" class="github-link" target="_blank">Ver Portafolio (portafolio-index.html)</a></p>
-                    <a href="https://github.com/sebastiandavid98" class="github-link" target="_blank">GitHub</a>
-                </div>
-
-                <!-- David Salas -->
-                <div class="developer-card">
-                    <img src="https://github.com/DavidSalas0273.png" alt="David Salas" class="developer-avatar">
-                    <h3 class="developer-name">David Salas (DavidSalas0273)</h3>
-                    <p class="developer-description">Desarrollador full-stack con enfoque en JavaScript y construcción de experiencias web accesibles y de alto rendimiento.</p>
-
-                    <div class="developer-services">
-                        <h4>Servicios Ofrecidos</h4>
-                        <div class="services-list">
-                            <span class="service-tag">Desarrollo front-end</span>
-                            <span class="service-tag">Integración de APIs</span>
-                            <span class="service-tag">Optimización y accesibilidad</span>
-                        </div>
-                    </div>
-
-                    <div class="developer-technologies">
-                        <h4>Tecnologías que Manejo</h4>
-                        <div class="tech-list">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">CSS/SASS</span>
+                            <span class="tech-tag">Git</span>
                         </div>
                     </div>
+                    
+                    <a href="https://github.com/sebastiandavid98" class="github-link" target="_blank">
+                        Ver mi GitHub
+                    </a>
+                </div>
 
-                    <p><a href="/portafolio-davidsalas0273.html" class="github-link" target="_blank">Ver Portafolio de DavidSalas0273</a></p>
-                    <a href="https://github.com/DavidSalas0273" class="github-link" target="_blank">GitHub</a>
->>>>>>> feature/add-portfolio-links
+                <!-- Portafolio Desarrollador 2 - David Esteban -->
+                <div class="developer-card">
+                    <img src="images/developers/dev2.jpg" alt="David Esteban" class="developer-avatar" onerror="this.src='https://via.placeholder.com/120x120/764ba2/ffffff?text=DE'">
+                    <h3 class="developer-name">David Esteban</h3>
+                    <p class="developer-description">
+                        Desarrollador Frontend apasionado por crear interfaces modernas y responsivas. 
+                        Especializado en React y diseño de experiencias de usuario intuitivas.
+                    </p>
+                    
+                    <div class="developer-services">
+                        <h4>Servicios Ofrecidos</h4>
+                        <div class="services-list">
+                            <span class="service-tag">Desarrollo Frontend</span>
+                            <span class="service-tag">Diseño Web</span>
+                            <span class="service-tag">Responsive Design</span>
+                            <span class="service-tag">Optimización Web</span>
+                        </div>
+                    </div>
+                    
+                    <div class="developer-technologies">
+                        <h4>Tecnologías que Manejo</h4>
+                        <div class="tech-list">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://github.com/davidesteban" class="github-link" target="_blank">
+                        Ver mi GitHub
+                    </a>
+                </div>
+
+                <!-- Portafolio Desarrollador 3 - Jhon Molina -->
+                <div class="developer-card">
+                    <img src="images/developers/dev3.jpg" alt="Jhon Molina" class="developer-avatar" onerror="this.src='https://via.placeholder.com/120x120/00a650/ffffff?text=JM'">
+                    <h3 class="developer-name">Jhon Molina</h3>
+                    <p class="developer-description">
+                        Desarrollador Backend con experiencia en Node.js y bases de datos. 
+                        Enfocado en crear APIs eficientes y soluciones escalables para aplicaciones web.
+                    </p>
+                    
+                    <div class="developer-services">
+                        <h4>Servicios Ofrecidos</h4>
+                        <div class="services-list">
+                            <span class="service-tag">Desarrollo Backend</span>
+                            <span class="service-tag">API REST</span>
+                            <span class="service-tag">Bases de Datos</span>
+                            <span class="service-tag">Integración de Servicios</span>
+                        </div>
+                    </div>
+                    
+                    <div class="developer-technologies">
+                        <h4>Tecnologías que Manejo</h4>
+                        <div class="tech-list">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://github.com/jhonmolina" class="github-link" target="_blank">
+                        Ver mi GitHub
+                    </a>
+                </div>
+
+                <!-- Portafolio Desarrollador 4 - David Salas -->
+                <div class="developer-card">
+                    <img src="images/developers/dev4.jpg" alt="David Salas" class="developer-avatar" onerror="this.src='https://via.placeholder.com/120x120/3483fa/ffffff?text=DS'">
+                    <h3 class="developer-name">David Salas</h3>
+                    <p class="developer-description">
+                        Desarrollador con experiencia en tecnologías web modernas. 
+                        Enfocado en crear aplicaciones funcionales y con buen diseño.
+                    </p>
+                    
+                    <div class="developer-services">
+                        <h4>Servicios Ofrecidos</h4>
+                        <div class="services-list">
+                            <span class="service-tag">Desarrollo Web</span>
+                            <span class="service-tag">Frontend</span>
+                            <span class="service-tag">Backend</span>
+                            <span class="service-tag">Diseño</span>
+                        </div>
+                    </div>
+                    
+                    <div class="developer-technologies">
+                        <h4>Tecnologías que Manejo</h4>
+                        <div class="tech-list">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://github.com/davidsalas" class="github-link" target="_blank">
+                        Ver mi GitHub
+                    </a>
                 </div>
             </div>
         </div>
