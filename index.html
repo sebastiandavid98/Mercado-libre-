@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MercadoLibre Colombia - Envíos Gratis en el día</title>
+    <title>Mercado Libre Colombia - Envíos Gratis en el día</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span>📍 Envía a Bogotá</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <svg width="134" height="34" viewBox="0 0 134 34" fill="none">
-                    <text x="0" y="24" font-family="Arial" font-size="20" font-weight="bold" fill="#333">MercadoLibre</text>
+                <svg width="134" height="34" viewBox="0 0 134 34">
+                    <text x="0" y="24" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2D3277">Mercado</text>
+                    <text x="75" y="24" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFE600">Libre</text>
                 </svg>
             </div>
             <div class="nav-search">
@@ -27,45 +37,75 @@
                 </button>
             </div>
             <div class="nav-links">
-                <a href="#ofertas">Ofertas del día</a>
-                <a href="#servicios">Historial</a>
-                <a href="#desarrolladores">Supermercado</a>
+                <a href="#ofertas">🏷️ Ofertas</a>
+                <a href="#servicios">📦 Historial</a>
                 <a href="#" class="nav-cart">🛒</a>
             </div>
         </div>
     </nav>
 
-    <!-- Banner Promocional -->
-    <div class="promo-banner">
-        <div class="container">
-            <p>🎉 Envío gratis desde $ 50.000 | Hasta 12 cuotas sin interés</p>
-        </div>
-    </div>
-
     <!-- Categorías -->
     <section class="categories">
         <div class="container">
-            <div class="categories-grid">
+            <div class="categories-scroll">
+                <a href="#" class="category-item">
+                    <span class="category-icon">🏪</span>
+                    <span>Supermercado</span>
+                </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">💳</span>
+                    <span>Moda</span>
+                </a>
                 <a href="#" class="category-item">
                     <span class="category-icon">📱</span>
                     <span>Tecnología</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">👕</span>
-                    <span>Moda</span>
                 </a>
                 <a href="#" class="category-item">
                     <span class="category-icon">🏠</span>
                     <span>Hogar</span>
                 </a>
                 <a href="#" class="category-item">
-                    <span class="category-icon">⚽</span>
-                    <span>Deportes</span>
+                    <span class="category-icon">⚡</span>
+                    <span>Electrodomésticos</span>
                 </a>
                 <a href="#" class="category-item">
                     <span class="category-icon">🎮</span>
                     <span>Juegos</span>
                 </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">⚽</span>
+                    <span>Deportes</span>
+                </a>
+                <a href="#" class="category-item">
+                    <span class="category-icon">🎨</span>
+                    <span>Belleza</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Principal -->
+    <section class="main-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Beneficios de comprar en Mercado Libre</h1>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🚚</div>
+                        <h3>Envío gratis por ser tu primera compra</h3>
+                        <p>Aprovecha este beneficio en millones de productos</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💳</div>
+                        <h3>Paga con tarjeta o en efectivo</h3>
+                        <p>Con Mercado Pago, paga en cuotas y aprovecha la comodidad</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Seguridad, de principio a fin</h3>
+                        <p>¿No te gusta? ¡Devuélvelo! Siempre estás protegido</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

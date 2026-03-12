@@ -1,4 +1,4 @@
-/* Navbar Styles - Estilo MercadoLibre */
+/* Navbar Styles - Estilo MercadoLibre Colombia */
 .navbar {
     background-color: #fff159;
     padding: 10px 0;
@@ -11,20 +11,22 @@
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 16px;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .nav-logo svg {
     height: 34px;
+    width: auto;
 }
 
 .nav-search {
@@ -39,12 +41,17 @@
 
 .nav-search input {
     width: 100%;
-    padding: 10px 15px;
+    padding: 9px 60px 9px 15px;
     border: none;
-    border-radius: 2px 0 0 2px;
+    border-radius: 2px;
     font-size: 16px;
     outline: none;
     background: transparent;
+    color: rgba(0,0,0,.9);
+}
+
+.nav-search input::placeholder {
+    color: rgba(0,0,0,.45);
 }
 
 .nav-search input:focus {
@@ -52,14 +59,17 @@
 }
 
 .nav-search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: #fff;
     color: #666;
     border: none;
-    border-left: 1px solid #e6e6e6;
-    padding: 10px 16px;
-    border-radius: 0 2px 2px 0;
+    border-left: 1px solid rgba(0,0,0,.1);
+    padding: 0 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,13 +83,14 @@
     display: flex;
     gap: 24px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: rgba(0,0,0,.9);
     font-weight: 400;
-    transition: color 0.3s;
+    transition: color 0.2s;
     font-size: 14px;
     white-space: nowrap;
 }
@@ -90,6 +101,7 @@
 
 .nav-cart {
     font-size: 20px;
+    padding: 4px;
 }
 
 /* Responsive Navbar */
@@ -111,11 +123,14 @@
     
     .nav-links {
         order: 2;
-        gap: 12px;
-        font-size: 12px;
+        gap: 16px;
     }
     
     .nav-links a {
         font-size: 12px;
+    }
+    
+    .nav-cart {
+        font-size: 18px;
     }
 }
