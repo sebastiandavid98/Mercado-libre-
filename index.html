@@ -10,24 +10,25 @@
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <span>📍 Envía a Bogotá</span>
-            </div>
-        </div>
-    </div>
-
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <svg width="134" height="34" viewBox="0 0 134 34">
-                    <text x="0" y="24" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2D3277">Mercado</text>
-                    <text x="75" y="24" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFE600">Libre</text>
-                </svg>
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <svg width="134" height="34" viewBox="0 0 134 34">
+                        <text x="0" y="24" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2D3277">mercado</text>
+                        <text x="70" y="24" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2D3277">libre</text>
+                    </svg>
+                </div>
+                <div class="nav-location">
+                    <span class="location-icon">📍</span>
+                    <div class="location-text">
+                        <span class="location-label">Ingresa tu</span>
+                        <span class="location-value">ubicación</span>
+                    </div>
+                </div>
             </div>
+            
             <div class="nav-search">
                 <input type="text" id="searchInput" placeholder="Buscar productos, marcas y más...">
                 <button id="searchBtn">
@@ -36,75 +37,94 @@
                     </svg>
                 </button>
             </div>
-            <div class="nav-links">
-                <a href="#ofertas">🏷️ Ofertas</a>
-                <a href="#servicios">📦 Historial</a>
-                <a href="#" class="nav-cart">🛒</a>
+
+            <div class="nav-promo">
+                <span class="promo-badge">ENVÍO GRATIS</span>
+                <span class="promo-text">EN TU PRIMERA COMPRA</span>
+            </div>
+        </div>
+
+        <!-- Segunda línea del navbar -->
+        <div class="nav-secondary">
+            <div class="nav-container">
+                <div class="nav-links">
+                    <a href="#categorias">Categorías</a>
+                    <a href="#ofertas">Ofertas</a>
+                    <a href="#cupones">Cupones</a>
+                    <a href="#supermercado">Supermercado</a>
+                    <a href="#moda">Moda</a>
+                    <a href="#vender">Vender</a>
+                    <a href="#ayuda">Ayuda / PQR</a>
+                </div>
+                <div class="nav-user">
+                    <a href="#cuenta">Crea tu cuenta</a>
+                    <a href="#ingresa">Ingresa</a>
+                    <a href="#compras">Mis compras</a>
+                    <a href="#carrito" class="nav-cart">🛒</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Categorías -->
-    <section class="categories">
-        <div class="container">
-            <div class="categories-scroll">
-                <a href="#" class="category-item">
-                    <span class="category-icon">🏪</span>
-                    <span>Supermercado</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">💳</span>
-                    <span>Moda</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">📱</span>
-                    <span>Tecnología</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">🏠</span>
-                    <span>Hogar</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">⚡</span>
-                    <span>Electrodomésticos</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">🎮</span>
-                    <span>Juegos</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">⚽</span>
-                    <span>Deportes</span>
-                </a>
-                <a href="#" class="category-item">
-                    <span class="category-icon">🎨</span>
-                    <span>Belleza</span>
-                </a>
+    <!-- Banner Principal con Carrusel -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="slide-content">
+                    <div class="slide-left">
+                        <h2>CUPONES EXCLUSIVOS</h2>
+                        <h3>SOLO POR 24 HORAS</h3>
+                        <p>SOLO PARA SUSCRIPTORES</p>
+                    </div>
+                    <div class="slide-right">
+                        <div class="promo-card">
+                            <h3>PARA TI QUE YA ERES meli+</h3>
+                            <div class="discount">15%DCTO</div>
+                            <p class="promo-code">CÓDIGO: MELIMASDAY</p>
+                            <button class="btn-subscribe">SUSCRÍBETE DESDE $9.900</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Banner Principal -->
-    <section class="main-banner">
+    <!-- Tarjetas de Beneficios -->
+    <section class="benefits-section">
         <div class="container">
-            <div class="banner-content">
-                <h1>Beneficios de comprar en Mercado Libre</h1>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🚚</div>
-                        <h3>Envío gratis por ser tu primera compra</h3>
-                        <p>Aprovecha este beneficio en millones de productos</p>
+            <div class="benefits-scroll">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📦</div>
+                    <h4>Envío gratis</h4>
+                    <p>Beneficio por ser tu primera compra.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏱️</div>
+                    <h4>Visto recientemente</h4>
+                    <div class="product-mini">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_924830-MLA71783581502_092023-F.webp" alt="Producto">
+                        <p class="product-price">$ 28.648</p>
                     </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">💳</div>
-                        <h3>Paga con tarjeta o en efectivo</h3>
-                        <p>Con Mercado Pago, paga en cuotas y aprovecha la comodidad</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🛡️</div>
-                        <h3>Seguridad, de principio a fin</h3>
-                        <p>¿No te gusta? ¡Devuélvelo! Siempre estás protegido</p>
-                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📍</div>
+                    <h4>Ingresa tu ubicación</h4>
+                    <p>Consulta costos y tiempos de entrega.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👤</div>
+                    <h4>Ingresa a tu cuenta</h4>
+                    <p>Disfruta de ofertas y compra sin límites.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💳</div>
+                    <h4>Medios de pago</h4>
+                    <p>Paga tus compras de forma rápida y segura.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Menos de $40.000</h4>
+                    <p>Descubre productos con precios bajos.</p>
                 </div>
             </div>
         </div>
